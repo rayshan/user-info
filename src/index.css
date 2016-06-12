@@ -1,0 +1,111 @@
+@import "~normalize.css";
+
+/* ---------------------------------------------------------------------------------------------- */
+
+:root {
+    --gray1: #FAFAFA; /* 50 */
+    --gray2: #EEEEEE; /* 200 */
+    --gray3: #E0E0E0; /* 300 */
+    --gray4: #9E9E9E; /* 500 */
+    --red1: red;
+
+    font-size: 20px;
+}
+
+html, body, #app-root, #app-container {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        sans-serif;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+form {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-input {
+    width: 100%;
+    text-align: center;
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--gray3);
+    font-family: Menlo, Consolas, monospace;
+    box-sizing: border-box;
+}
+
+#text-input:focus {
+    border-bottom: 2px solid var(--gray4);
+}
+
+#text-input:focus::placeholder {
+    color: var(--gray4);
+}
+
+#submit {
+    width: 6rem;
+    margin-top: 1rem;
+    background-color: var(--gray2);
+    border: none;
+    outline: none;
+    height: 2rem;
+    font-size: .8rem;
+}
+
+#submit:active {
+    background-color: var(--gray3);
+}
+
+#error-message {
+    width: 20rem;
+    height: 1rem;
+    font-size: .8rem;
+    color: var(--red1);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#results > * + * {
+    margin-top: 1rem;
+}
+
+#avatar {
+    width: 3rem;
+    height: auto;
+}
+
+#email {
+    font-family: Menlo, Consolas, monospace;
+}
