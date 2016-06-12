@@ -13,6 +13,8 @@ Known issues:
 
 ## Development
 
+- `npm install`
+- Ensure `webpack-dev-server` is installed globally
 - `npm run dev`
 - Open `localhost:4000` with your favorite browser
 

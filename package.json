@@ -1,7 +1,7 @@
 {
   "name": "user-info",
   "version": "0.1.0",
-  "description": "React is a JavaScript library for building user interfaces.",
+  "description": "Lookup information given an username.",
   "main": "index.html",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --hot --inline",
